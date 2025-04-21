@@ -1,0 +1,9 @@
+{
+    "files.eol": "\n",
+    "debugpy.debugJustMyCode": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestArgs": [
+        "--maxfail=10"
+    ]
+}

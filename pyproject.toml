@@ -1,0 +1,31 @@
+[project]
+name = "ml_eng_interview"
+version = "0.1.0"
+description = "simple project to evaluate python skills real time"
+authors = [
+    {name = "Javier Tovar", email = "javier.tovar@nielseniq.com"},
+]
+dependencies = [
+    "pandas>=2.2.3",
+]
+requires-python = ">=3.9"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=8.3.5",
+]
+
+[tool.pytest.ini_options]
+log_cli = true
+testpaths = "tests/"
+filterwarnings = ["ignore::DeprecationWarning", "ignore::UserWarning"]
